@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>GENKGAME TOPUP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-overlay">
+
+    <header class="navbar">
+        <h1>GENK<span>TOPUP</span></h1>
+    </header>
+
+    <section class="games">
+        <div class="game-card" onclick="selectGame('Mobile Legends')">
+            <img src="img/ml.jpg">
+            <p>Mobile Legends</p>
+        </div>
+        <div class="game-card" onclick="selectGame('Free Fire')">
+            <img src="img/ff.jpg">
+            <p>Free Fire</p>
+        </div>
+        <div class="game-card" onclick="selectGame('PUBG Mobile')">
+            <img src="img/pubg.jpg">
+            <p>PUBG Mobile</p>
+        </div>
+    </section>
+
+    <section class="form">
+        <h2 id="gameTitle">Pilih Game</h2>
+
+        <input type="text" id="userid" placeholder="User ID">
+        <input type="text" id="server" placeholder="Server ID (opsional)">
+
+        <select id="nominal">
+            <option value="">Pilih Nominal</option>
+            <option value="86000">86 Diamonds - Rp86.000</option>
+            <option value="172000">172 Diamonds - Rp172.000</option>
+            <option value="257000">257 Diamonds - Rp257.000</option>
+        </select>
+
+        <button onclick="orderNow()">Order Sekarang</button>
+    </section>
+
+    <footer>
+        <p>⚡ Fast • Safe • Trusted</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
